@@ -1,11 +1,12 @@
-package com.haud.qa.svalinn.frontend;
+package com.haud.qa.exercise.autotest2019;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class MainTest {
 
-   public static void main(String[] args) {
-
-
+   @Test
+   public void main() {
+      Assert.assertTrue(true);
    }
-
 }

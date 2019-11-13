@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+   <Properties>
+      <Property name="logPath">logs</Property>
+      <Property name="rollingFileName">autotest2019</Property>
+   </Properties>
+   <Appenders>
+      <Console name="console" target="SYSTEM_OUT">
+         <PatternLayout
+            pattern="%msg%n"
+            alwaysWriteExceptions="true"/>
+      </Console>
+      <RollingFile
+         name="rollingFile"
+         fileName="${logPath}/${rollingFileName}.log"
+         filePattern="${logPath}/${rollingFileName}_%d{yyyy-MM-dd}.log">
+         <PatternLayout
+            pattern="%msg%n"
+            alwaysWriteExceptions="true"/>
+         <Policies>
+            <!-- Causes a rollover if the log file is older than the current JVM's start time -->
+            <OnStartupTriggeringPolicy/>
+            <!-- Causes a rollover once the date/time pattern no longer applies to the active file -->
+            <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+         </Policies>
+      </RollingFile>
+      <RollingFile name="htmlFileLogger"
+                   fileName="${logPath}/${rollingFileName}.html"
+                   filePattern="${logPath}/${rollingFileName}_%d{yyyy-MM-dd}.log">
+         <HTMLLayout charset="UTF-8" title="Automated Test 2019 Exercise" locationInfo="true"/>
+         <Policies>
+            <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            <SizeBasedTriggeringPolicy size="10 MB"/>
+         </Policies>
+      </RollingFile>
+   </Appenders>
+   <Loggers>
+      <Root level="ALL" additivity="false">
+         <AppenderRef ref="console"/>
+         <AppenderRef ref="rollingFile"/>
+         <AppenderRef ref="htmlFileLogger"/>
+      </Root>
+   </Loggers>
+</Configuration>
