@@ -32,11 +32,13 @@ Choose the format you are most comfortable with. e.g. Excel, Word, LibreOffice, 
 
 ## 3. Automated API test
 
-Use [RestAssured](http://rest-assured.io) library to test the following:
+Use [RestAssured](http://rest-assured.io) library to test [Pet Store](https://petstore.swagger.io) for the following two APIs:
 
 1. create Pet. Name and ID are not important;
-2. get all Pets;
-3. test Pets list has the created Pet.
+2. get Pet;
+3. test Pet payload has the expected name and ID.
+
+API Reference can be found in [Pet Store](https://petstore.swagger.io)
 
 Use the API libraries you are most familiar with. 
 
