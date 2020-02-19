@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.haud.qa.exercise</groupId>
-   <artifactId>autotest2019</artifactId>
+   <artifactId>javatest</artifactId>
    <version>1.0.0-SNAPSHOT</version>
    <packaging>jar</packaging>
-   <name>Automated Test 2019 Exercise</name>
-   <url>https://github.com/haudcpiccinino/auto-test-2019-exercise</url>
+   <name>QA Java Test Exercise</name>
+   <url>https://github.com/haudcpiccinino/qa_java_test_exercise</url>
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -17,39 +17,8 @@
       <timestamp>${maven.build.timestamp}</timestamp>
       <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
    </properties>
-   <dependencies>
-      <dependency>
-         <groupId>org.apache.commons</groupId>
-         <artifactId>commons-lang3</artifactId>
-         <version>3.9</version>
-      </dependency>
-      <dependency>
-         <groupId>org.apache.logging.log4j</groupId>
-         <artifactId>log4j-api</artifactId>
-         <version>2.12.1</version>
-      </dependency>
-      <dependency>
-         <groupId>org.apache.logging.log4j</groupId>
-         <artifactId>log4j-core</artifactId>
-         <version>2.12.1</version>
-      </dependency>
-      <dependency>
-         <groupId>org.testng</groupId>
-         <artifactId>testng</artifactId>
-         <version>7.0.0</version>
-         <scope>test</scope>
-      </dependency>
-   </dependencies>
    <build>
       <plugins>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.0.0-M3</version>
-            <configuration>
-               <reuseForks>false</reuseForks>
-            </configuration>
-         </plugin>
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -59,6 +28,37 @@
                <showDeprecation>true</showDeprecation>
             </configuration>
          </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M3</version>
+            <configuration>
+               <reuseForks>false</reuseForks>
+            </configuration>
+         </plugin>
       </plugins>
    </build>
+   <dependencies>
+      <dependency>
+         <groupId>org.apache.commons</groupId>
+         <artifactId>commons-lang3</artifactId>
+         <version>3.9</version>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.logging.log4j</groupId>
+         <artifactId>log4j-api</artifactId>
+         <version>2.13.0</version>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.logging.log4j</groupId>
+         <artifactId>log4j-core</artifactId>
+         <version>2.13.0</version>
+      </dependency>
+      <dependency>
+         <groupId>org.testng</groupId>
+         <artifactId>testng</artifactId>
+         <version>7.0.0</version>
+         <scope>test</scope>
+      </dependency>
+   </dependencies>
 </project>

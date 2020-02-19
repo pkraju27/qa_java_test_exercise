@@ -1,4 +1,4 @@
-package com.haud.qa.exercise.autotest2019;
+package com.haud.qa.exercise;
 
 public class Main {
 

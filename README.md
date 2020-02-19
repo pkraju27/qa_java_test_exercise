@@ -1,48 +1,55 @@
-# Automated Test 2019 Exercise 
-Java application exercise to test multiple interfaces in one scenario.
+# QA Java Test Exercise 
 
-## Requirements
-1. [Java 11](https://maven.apache.org/download.cgi)
-2. [Maven v3+](https://maven.apache.org/download.cgi)
+Quality Assurance aim is to provide rigor and validation to the target application. 
+The following tasks are about testing a website's _header_ navigation, intended for automated regression testing. 
 
-## Getting Started
-The application should start from `com.haud.qa.exercise.autotest2019.Main` class.
-Create all the necessary classes to write the following tests.
-Use `com.haud.qa.exercise.autotest2019.Log` class to report the test result.
+This project is located [here](https://github.com/haudcpiccinino/qa_java_test_exercise).
+Please fork this project if you intend to commit to it.
+
+Please note the last task is optional.
+
+When submitting the project please provide a brief of required tools and how to run the application.
+
+Thank you for trying the test.
+
+
+## Tasks
+
+1. [Write Test Specification](#1-write-test-specification)
+2. [Automated Selenium Test](#2-automated-selenium-test)
+3. [Automated API Test](#2-automated-selenium-test)
+4. [Unit Tests (optional)](#3-unit-test-optional)
+
 
 ---
 
-## 1. Automated Selenium test
-Use Selenium library to test the Header menu of website [https://www.haud.com](https://www.haud.com). Test only the visible links are not broken. i.e.:
 
-1. link _Home_ redirects to [/](https://haud.com/);
-2. link _Products and services_ redirects to [/products-and-services](https://haud.com/products-and-services);
-3. link _Knowledge Centre_ to [/knowledge-centre](https://haud.com/knowledge-centre)
-4. link _About Haud_ to [/about-haud](https://haud.com/about-haud)
-5. link _Careers_ to [/blog/category/careers](https://haud.com/blog/category/careers)
-6. link _Blog_ to [/blog](https://haud.com/blog);
-7. link _Contact us_ to [/contact-us](https://haud.com/contact-us)
+## 1. Write Test Specification
 
-## 2. Write Test Case
+Write a test specification to test the _header_ navigation menu of the website [https://www.haud.com](https://www.haud.com).
 
-Write a complete _test case_ to test the Header menu of website [https://www.haud.com](https://www.haud.com) for manual regression testing. 
-
-Choose the format you are most comfortable with. e.g. Excel, Word, LibreOffice, Markdown etc...
+Choose the format you are most comfortable with. E.g. Excel, Word, LibreOffice, Markdown etc.... 
+In the specification include user actions taken, any values used, and important assertions.
 
 
-## 3. Automated API test
+## 2. Automated Selenium Test
 
-Use [RestAssured](http://rest-assured.io) library to test [Pet Store](https://petstore.swagger.io) for the following two APIs:
+Use Selenium library to test the specification you have just created. Please note that the application should start from
+class `com.haud.qa.exercise.Main` and use class `com.haud.qa.exercise.Log` to report the test result.
 
-1. create Pet. Name and ID are not important;
-2. get Pet;
-3. test Pet payload has the expected name and ID.
 
+## 3. Automated API Test
+
+Use the same Application and any API library to test [Pet Store](https://petstore.swagger.io).
 API Reference can be found in [Pet Store](https://petstore.swagger.io)
+Test only the following two APIs...
 
-Use the API libraries you are most familiar with. 
+1.  Create Pet
+    Test response is successful
+2.  Get Pet
+    Test response is successful and has the expected _name_ and _ID_ 
 
 
-## 4. Optional
+### 4. Unit Tests (optional)
 
-Write some unit tests.
+Write some unit tests of the script above.

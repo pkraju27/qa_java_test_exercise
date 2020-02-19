@@ -1,4 +1,4 @@
-package com.haud.qa.exercise.autotest2019;
+package com.haud.qa.exercise;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
