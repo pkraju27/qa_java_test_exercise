@@ -1,14 +1,11 @@
-# QA Java Test Exercise 
+# [QA Java Test Exercise](https://github.com/haudcpiccinino/qa_java_test_exercise)
 
-Quality Assurance aim is to provide rigor and validation to the target application. 
-The following tasks are about testing a website's _header_ navigation, intended for automated regression testing. 
+The Quality Assurance team's main aim is to provide rigor and validation to the target application. 
+The following tasks are about testing a website's _header_ navigation and the test is intended for automated regression testing. 
 
-This project is located [here](https://github.com/haudcpiccinino/qa_java_test_exercise).
-Please fork this project if you intend to commit to it.
+Please either download or fork this project to start working on this test. Also please note that the last task is optional.
 
-Please note the last task is optional.
-
-When submitting the project please provide a brief of required tools and how to run the application.
+When submitting the project please provide a summary of the required tools to run the application.
 
 Thank you for trying the test.
 
