@@ -1,7 +1,7 @@
 # [QA Java Test Exercise](https://github.com/haudcpiccinino/qa_java_test_exercise)
 
-The Quality Assurance team's main aim is to provide rigor and validation to the target application. 
-The following tasks are about testing a website's _header_ navigation and the test is intended for automated regression testing. 
+The Quality Assurance team's main aim is to provide rigor and validation to the target application.
+The following tasks are about testing a website's _header_ navigation and the test is intended for automated regression testing.
 
 Please either download or fork this project to start working on this test. Also please note that the last task is optional.
 
@@ -25,14 +25,13 @@ Thank you for trying the test.
 
 Write a test specification to test the _header_ navigation menu of the website [https://www.haud.com](https://www.haud.com).
 
-Choose the format you are most comfortable with. E.g. Excel, Word, LibreOffice, Markdown etc.... 
+Choose the format you are most comfortable with. Example Excel, Word, LibreOffice, Markdown etc....
 In the specification include user actions taken, any values used, and important assertions.
 
 
 ## 2. Automated Selenium Test
 
-Use Selenium library to test the specification you have just created. Please note that the application should start from
-class `com.haud.qa.exercise.Main` and use class `com.haud.qa.exercise.Log` to report the test result.
+Use Selenium library to test the specification you have just created. Please note that the application should start from class `com.haud.qa.exercise.Main` and use class `com.haud.qa.exercise.Log` to report the test result.
 
 
 ## 3. Automated API Test
@@ -42,9 +41,9 @@ API Reference can be found in [Pet Store](https://petstore.swagger.io)
 Test only the following two APIs...
 
 1.  Create Pet
-    Test response is successful
+    Test response must be successful with correct details.
 2.  Get Pet
-    Test response is successful and has the expected _name_ and _ID_ 
+    Test response must be successful with correct details.
 
 
 ### 4. Unit Tests (optional)
