@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.Assert;
 
 public class Desktop {
    WebDriver driver;
@@ -32,6 +33,9 @@ public class Desktop {
             createFirefoxDriver();
             Log.info("Firefox browser");
             break;
+         default:
+            Log.warn("Unsupported browser selected");
+            Assert.fail("Browser "+GetProperty.BROWSER_NAME+" is not supported, please use chrome or firefox" );
       }
    }
    private void createChromeDriver(){

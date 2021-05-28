@@ -1,20 +1,18 @@
 package com.haud.qa.exercise;
 
-import Driver.DriverFactory;
-
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-
-import java.io.IOException;
+import com.haud.qa.exercise.SeleniumTest.HaudHeaderNavigationTest;
+import com.haud.qa.exercise.SeleniumTest.HaudTestListener;
+import org.testng.TestNG;
 
 public class Main {
-
-    public static void main(String[] args)  {
-       WebDriver driver = new DriverFactory().getDriver();
-       String userAgent = (String) ((JavascriptExecutor) driver).executeScript("return navigator.userAgent;");
-       Log.info(userAgent);
-       driver.get("https://haud.com/");
-       Log.info(driver.getCurrentUrl()+" "+driver.getTitle());
-       driver.quit();
-    }
+   public static void main(String[] args) {
+      TestNG testSuite = new TestNG();
+      testSuite.setTestClasses(new Class[]{HaudHeaderNavigationTest.class});
+      testSuite.addListener(new HaudTestListener());
+      testSuite.setDefaultSuiteName("My Test Suite");
+      testSuite.setDefaultTestName("My Test");
+      testSuite.setOutputDirectory("src/main/java/com/haud/qa/exercise/SeleniumTest/Results");
+      testSuite.getReporters();
+      testSuite.run();
+   }
 }

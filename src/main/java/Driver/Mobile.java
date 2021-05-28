@@ -10,9 +10,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.testng.Assert;
+import org.testng.asserts.Assertion;
 
 public class Mobile {
    WebDriver driver;
+   String browser_version=GetProperty.BROWSER_VERSION;
    Mobile(){
       createMobileDriver();
    }
@@ -37,8 +40,12 @@ public class Mobile {
             Log.info("Firefox browser on Mobile");
             createFirefoxDriver();
             break;
+         default:
+            Log.warn("Unsupported browser selected");
+            Assert.fail("Browser "+GetProperty.BROWSER_NAME+" is not supported, please use chrome or firefox" );
       }
    }
+
 
    /**
     * Creates and sets firefoxDriver for Mobile
@@ -46,8 +53,7 @@ public class Mobile {
     * Will create driver for latest version.
     */
    private void createFirefoxDriver() {
-      String browser_version=GetProperty.BROWSER_VERSION;
-      if(browser_version.isEmpty()||browser_version.equalsIgnoreCase("latest")){
+      if(isDefaultBrowser()){
          WebDriverManager.firefoxdriver().setup();
       }else{
          WebDriverManager.firefoxdriver().browserVersion(browser_version).setup();
@@ -71,8 +77,7 @@ public class Mobile {
     * Will create driver for latest version.
     */
    private void createChromeDriver() {
-      String browser_version=GetProperty.BROWSER_VERSION;
-      if(browser_version.isEmpty()||browser_version.equalsIgnoreCase("latest")){
+      if(isDefaultBrowser()){
          WebDriverManager.chromedriver().setup();
       }else{
          WebDriverManager.chromedriver().browserVersion(browser_version).setup();
@@ -84,5 +89,9 @@ public class Mobile {
          "Mobile/14E5239e Safari/602.1"); // Chrome on iOS user agent
       setDriver(new ChromeDriver(chromeOptions));
       getDriver().manage().window().setSize(new Dimension(414,736));
+   }
+
+   private boolean isDefaultBrowser(){
+      return (browser_version.isEmpty()||browser_version.equalsIgnoreCase("latest"));
    }
 }

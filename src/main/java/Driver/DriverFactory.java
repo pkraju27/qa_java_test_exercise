@@ -4,6 +4,7 @@ import Util.AppProperties;
 import Util.GetProperty;
 import com.haud.qa.exercise.Log;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import java.io.IOException;
 
@@ -32,7 +33,7 @@ public class DriverFactory {
             // setDriver(new Mobile().getDriver());
             break;
          default:
-            Log.warn("Invalid platform name, Please use supported platform Desktop and Mobile");
+            Assert.fail("Invalid platform name"+GetProperty.PLATFORM+", Please use supported platform Desktop and Mobile");
       }
    }
 }

@@ -5,10 +5,12 @@ import org.apache.logging.log4j.Logger;
 
 public class Log {
 
+
    private static final Logger LOGGER = LogManager.getLogger(Log.class);
 
    public static void debug(final String logMessage) {
       LOGGER.debug(logMessage);
+
    }
 
    public static void info(final String logMessage) {
