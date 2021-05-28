@@ -1,16 +1,17 @@
 package com.haud.qa.exercise.SeleniumTest;
 
+import com.haud.qa.exercise.Log;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 
 public class HaudTestListener implements ISuiteListener {
    @Override
    public void onStart(ISuite suite) {
-      System.out.println("TestNG suite default output directory = " + suite.getOutputDirectory());
+      Log.info("TestNG suite default output directory = " + suite.getOutputDirectory());
    }
 
    @Override
    public void onFinish(ISuite suite) {
-      System.out.println("TestNG invoked methods = " + suite.getAllInvokedMethods());
+      Log.info("TestNG invoked methods = " + suite.getAllInvokedMethods());
    }
 }

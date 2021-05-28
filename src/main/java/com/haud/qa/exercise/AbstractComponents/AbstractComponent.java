@@ -15,7 +15,12 @@ public abstract class AbstractComponent {
       return sectionElement.findElement(by);
    }
 
-   public String getAttribute(By by, String attributeName) {
-      return sectionElement.findElement(by).getAttribute(attributeName);
+   public String getPageTitle(WebDriver driver) {
+      return driver.getTitle();
    }
+
+   public String getCurrentURL(WebDriver driver) {
+      return driver.getCurrentUrl();
+   }
+
 }

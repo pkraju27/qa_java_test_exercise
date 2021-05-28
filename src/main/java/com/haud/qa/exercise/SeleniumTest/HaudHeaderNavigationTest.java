@@ -1,6 +1,7 @@
 package com.haud.qa.exercise.SeleniumTest;
 
 import Driver.DriverFactory;
+import com.haud.qa.exercise.Log;
 import com.haud.qa.exercise.PageObjects.HaudHomePage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
@@ -25,5 +26,35 @@ public class HaudHeaderNavigationTest {
    @Test
    public void pageLoadTest() {
       homePage.getHeaderNav().clickLogo();
+   }
+
+   @Test
+   public void test_HomeLink() {
+      homePage.getHeaderNav().clickHome();
+   }
+
+   @Test
+   public void test_KnowledgeCenterLink() {
+      homePage.getHeaderNav().clickKnowledgeCenter();
+   }
+
+   @Test
+   public void test_TrendingTopicsLink() {
+      homePage.getHeaderNav().clickTrendingTopics();
+   }
+
+   @Test
+   public void test_ContactLink() {
+      homePage.getHeaderNav().clickContact();
+   }
+
+   @Test
+   public void test_HaudSolutionsLink() {
+      homePage.getHeaderNav().clickHaudSolutons();
+   }
+
+   @Test
+   public void test_AboutHaudLink() {
+      homePage.getHeaderNav().clickAbout();
    }
 }
