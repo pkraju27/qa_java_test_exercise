@@ -10,10 +10,13 @@ public class HaudHomePage {
 
   public HaudHomePage(WebDriver driver){
       this.driver = driver;
-      driver.get("https://haud.com/");
+      openHomePage();
    }
 
    public HeaderNav getHeaderNav(){
       return new HeaderNav(driver,HeaderSection);
+   }
+   public void openHomePage(){
+      driver.get("https://haud.com/");
    }
 }

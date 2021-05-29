@@ -8,7 +8,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
+
+import java.util.logging.Level;
 
 public class Desktop {
    WebDriver driver;
@@ -22,6 +28,7 @@ public class Desktop {
 
    public void setDriver(WebDriver driver) {
       this.driver = driver;
+      driver.manage().window().maximize();
    }
    public void createDesktopDriver(){
       switch (GetProperty.BROWSER_NAME){
@@ -46,7 +53,10 @@ public class Desktop {
          WebDriverManager.chromedriver().browserVersion(browser_version).setup();
       }
       ChromeOptions chromeOptions = new ChromeOptions();
+      LoggingPreferences logPrefs = new LoggingPreferences();
+      logPrefs.enable(LogType.BROWSER, Level.ALL);
       chromeOptions.setAcceptInsecureCerts(true);
+      chromeOptions.setCapability(CapabilityType.LOGGING_PREFS,logPrefs);
       setDriver(new ChromeDriver(chromeOptions));
    }
    private void createFirefoxDriver(){

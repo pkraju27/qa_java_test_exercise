@@ -3,7 +3,10 @@ package Driver;
 import Util.AppProperties;
 import Util.GetProperty;
 import com.haud.qa.exercise.Log;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.io.IOException;
@@ -18,8 +21,11 @@ public class DriverFactory {
    }
 
    WebDriver driver;
+   WebDriverWait wait;
    public DriverFactory(){
       createDriver();
+      wait = new WebDriverWait(getDriver(),50); // Maximum wait 50 seconds
+      setDriver(getDriver());
    }
    private void createDriver(){
       switch(GetProperty.PLATFORM){
