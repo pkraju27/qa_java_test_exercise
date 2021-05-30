@@ -30,6 +30,10 @@ public class Desktop {
       this.driver = driver;
       driver.manage().window().maximize();
    }
+
+   /**
+    * Creates driver instance for Desktop browser
+    */
    public void createDesktopDriver(){
       switch (GetProperty.BROWSER_NAME){
          case "chrome":
@@ -45,6 +49,10 @@ public class Desktop {
             Assert.fail("Browser "+GetProperty.BROWSER_NAME+" is not supported, please use chrome or firefox" );
       }
    }
+
+   /**
+    * Creates driver instance for Desktop chrome
+    */
    private void createChromeDriver(){
       String browser_version=GetProperty.BROWSER_VERSION;
       if(browser_version.isEmpty()||browser_version.equalsIgnoreCase("latest")){
@@ -59,6 +67,10 @@ public class Desktop {
       chromeOptions.setCapability(CapabilityType.LOGGING_PREFS,logPrefs);
       setDriver(new ChromeDriver(chromeOptions));
    }
+
+   /**
+    * Creates driver instance for Desktop firefox
+    */
    private void createFirefoxDriver(){
       String browser_version=GetProperty.BROWSER_VERSION;
       if(browser_version.isEmpty()||browser_version.equalsIgnoreCase("latest")){

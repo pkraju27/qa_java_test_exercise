@@ -19,16 +19,35 @@ public abstract class AbstractComponent {
       return sectionElement.findElement(by);
    }
 
+   /**
+    * Method to verify current page title match
+    * @param driver
+    * @param title
+    * @return True if current page Title matches with Expected title
+    */
    public boolean verifyPageTitle(WebDriver driver,String title) {
       Log.info("Expected Title: "+title);
       Log.info("Actual Title: "+ driver.getTitle());
       return driver.getTitle().equalsIgnoreCase(title);
    }
 
+   /**
+    * Method to verify current page url match
+    * @param driver
+    * @param url
+    * @return True if current page url matches with Expected url
+    */
    public boolean verifyCurrentURL(WebDriver driver,String url) {
       return driver.getCurrentUrl().equalsIgnoreCase(url);
    }
 
+   /**
+    * Checks if passed dropdown Element contents matches the list
+    * @param e
+    * @param list
+    * @param by
+    * @return
+    */
    public boolean isdropDownListMenuMatch(WebElement e, List<String> list,By by){
       List <WebElement> op = e.findElements(by);
       int size = op.size();

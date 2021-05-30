@@ -14,7 +14,7 @@ public class HeaderNav extends AbstractComponent {
    By home = By.id("menu-item-5319");
    By haudSolutons = By.id("menu-item-5320");
    By haudSolutonsDropdown = By.xpath("//*[@id='menu-item-5320']//*[@class='sub-menu']");
-   By AboutUsDropDown= By.xpath("//*[@id='menu-item-5328']//*[@class='sub-menu']");
+   By AboutUsDropDown = By.xpath("//*[@id='menu-item-5328']//*[@class='sub-menu']");
    By KnowledgeCenter = By.xpath("//*[@id='menu-item-5327']/a");
    By About = By.xpath("//*[@id='menu-item-5328']/a");
    By TrendingTopics = By.xpath("//*[@id='menu-item-5329']/a");
@@ -30,6 +30,9 @@ public class HeaderNav extends AbstractComponent {
    By Careers = By.xpath("//*[@id='menu-item-5606']/a");
    By HaudSolutionsDrownDownMenuList = By.cssSelector(".menu-item-type-post_type");
    By AboutUsDropDownList = By.cssSelector(".menu-item");
+   By HamburgerMenu = By.cssSelector(".menu-toggle");
+   By HaudSolutionsDropDownIcon = By.xpath("//*[@id='menu-item-5320']//*[@class='dropdown-toggle']");
+   By AboutUsDropDownIcon = By.xpath("//*[@id='menu-item-5328']//*[@class='dropdown-toggle']");
 
 
    public HeaderNav(WebDriver driver, By headerSection) {
@@ -96,44 +99,68 @@ public class HeaderNav extends AbstractComponent {
       getContactLink().click();
    }
 
-   public WebElement getSmartXchange(){
+   public void clickHamburgerMenu() {
+      getElement(HamburgerMenu).click();
+   }
+
+   public WebElement getSmartXchange() {
       return getElement(SmartXchange);
    }
-   public WebElement getSmartNForce(){
-     return getElement(SmartNForce);
+
+   public WebElement getSmartNForce() {
+      return getElement(SmartNForce);
    }
-   public WebElement getSmartCharge(){
+
+   public WebElement getSmartCharge() {
       return getElement(SmartCharge);
    }
-   public WebElement getSmartEnabled(){
+
+   public WebElement getSmartEnabled() {
       return getElement(SmartEnabled);
    }
-   public WebElement getSmartNvision(){
+
+   public WebElement getSmartNvision() {
       return getElement(SmartNvision);
    }
-   public WebElement getSmartBid(){
+
+   public WebElement getSmartBid() {
       return getElement(SmartBid);
    }
-   public WebElement getCompany(){
+
+   public WebElement getCompany() {
       return getElement(Company);
    }
-   public WebElement getMeetTheTeam(){
-     return getElement(MeetTheTeam);
+
+   public WebElement getMeetTheTeam() {
+      return getElement(MeetTheTeam);
    }
-   public WebElement getCareers(){
-     return getElement(Careers);
+
+   public WebElement getCareers() {
+      return getElement(Careers);
    }
-   public WebElement getHaudSolutionsDropDown(){
+
+   public WebElement getHaudSolutionsDropDown() {
       return getElement(haudSolutonsDropdown);
    }
-   public WebElement getAboutusDropDown(){
+
+   public WebElement getAboutusDropDown() {
       return getElement(AboutUsDropDown);
    }
-   public boolean isHaudSolutionsDropDownMatch(List<String> list){
-      return isdropDownListMenuMatch(getHaudSolutionsDropDown(),list,HaudSolutionsDrownDownMenuList);
+
+   public void clickHaudSolutionsDrownDownIcon(){
+      getElement(HaudSolutionsDropDownIcon).click();
    }
-   public boolean isAboutUsDropDownMatch(List<String> list){
-      return isdropDownListMenuMatch(getAboutusDropDown(),list,AboutUsDropDownList);
+
+   public void clickAboutUsDrownDownIcon(){
+      getElement(AboutUsDropDownIcon).click();
+   }
+
+   public boolean isHaudSolutionsDropDownMatch(List<String> list) {
+      return isdropDownListMenuMatch(getHaudSolutionsDropDown(), list, HaudSolutionsDrownDownMenuList);
+   }
+
+   public boolean isAboutUsDropDownMatch(List<String> list) {
+      return isdropDownListMenuMatch(getAboutusDropDown(), list, AboutUsDropDownList);
    }
 
 

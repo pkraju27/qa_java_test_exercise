@@ -17,6 +17,7 @@ public class DriverFactory {
    }
 
    public void setDriver(WebDriver driver) {
+      wait = new WebDriverWait(driver,50);
       this.driver = driver;
    }
 
@@ -24,8 +25,6 @@ public class DriverFactory {
    WebDriverWait wait;
    public DriverFactory(){
       createDriver();
-      wait = new WebDriverWait(getDriver(),50); // Maximum wait 50 seconds
-      setDriver(getDriver());
    }
    private void createDriver(){
       switch(GetProperty.PLATFORM){
