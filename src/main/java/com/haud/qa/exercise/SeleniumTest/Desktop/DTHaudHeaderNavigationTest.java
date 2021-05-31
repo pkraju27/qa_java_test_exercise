@@ -42,7 +42,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 1)
+   @Test(priority = 2)
    public void test_HomeLink() {
       Log.info("Test Home link started");
       homePage.getHeaderNav().clickHome();
@@ -56,7 +56,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 1)
+   @Test(priority = 3)
    public void test_KnowledgeCenterLink() {
       Log.info("Test Knowledge Center started");
       homePage.getHeaderNav().clickKnowledgeCenter();
@@ -71,7 +71,7 @@ public class DTHaudHeaderNavigationTest {
 
    }
 
-   @Test(priority = 1)
+   @Test(priority = 4)
    public void test_TrendingTopicsLink() {
       Log.info("Test Trending topics started");
       homePage.getHeaderNav().clickTrendingTopics();
@@ -86,7 +86,7 @@ public class DTHaudHeaderNavigationTest {
 
    }
 
-   @Test(priority = 1)
+   @Test(priority = 5)
    public void test_ContactLink() {
       Log.info("Test Contact us started");
       homePage.getHeaderNav().clickContact();
@@ -100,7 +100,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 1)
+   @Test(priority = 6)
    public void test_HaudSolutionsLink() {
       Log.info("Test Haud Solutions started");
       homePage.getHeaderNav().clickHaudSolutons();
@@ -114,7 +114,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 1)
+   @Test(priority = 7)
    public void test_HaudSolutionsDropDown(){
       Log.info("Haud Solutions drop down menu verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
@@ -124,7 +124,7 @@ public class DTHaudHeaderNavigationTest {
    }
 
 
-   @Test(priority = 1)
+   @Test(priority = 8)
    public void test_AboutUsMenu() {
       Log.info("About us drop down menu verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getAboutLink());
@@ -132,7 +132,7 @@ public class DTHaudHeaderNavigationTest {
          , "Dropdown link doesn't match");
    }
 
-   @Test(priority = 2)
+   @Test(priority = 9)
    public void test_SmartXchangeLink() {
       Log.info("SmartXchange Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
@@ -147,7 +147,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 2)
+   @Test(priority = 10)
    public void test_SmartNForceLink() {
       Log.info("Smart Nforce Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
@@ -162,7 +162,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 2)
+   @Test(priority = 11)
    public void test_SmartChargeLink() {
       Log.info("Smart charge Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
@@ -178,7 +178,7 @@ public class DTHaudHeaderNavigationTest {
 
    }
 
-   @Test(priority = 2)
+   @Test(priority = 12)
    public void test_SmartEnabledLink() {
       Log.info("Smart Enabled Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
@@ -193,7 +193,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 2)
+   @Test(priority = 13)
    public void test_SmartNvisionLink() {
       Log.info("Smart Nvision Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
@@ -209,7 +209,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 2)
+   @Test(priority = 14)
    public void test_SmartBidLink() {
       Log.info("Smart BidLink verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
@@ -224,7 +224,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 2)
+   @Test(priority = 15)
    public void test_AboutHaudLink() {
       Log.info("Test About us started");
       homePage.getHeaderNav().clickAbout();
@@ -240,7 +240,7 @@ public class DTHaudHeaderNavigationTest {
    }
 
 
-   @Test(priority = 2)
+   @Test(priority = 16)
    public void test_CompanyLink() {
       Log.info("Smart BidLink verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getAboutLink());
@@ -255,7 +255,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 2)
+   @Test(priority = 17)
    public void test_MeetTeamLink() {
       Log.info("Smart BidLink verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getAboutLink());
@@ -270,7 +270,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 2)
+   @Test(priority = 18)
    public void test_CareersLink() {
       Log.info("Smart BidLink verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getAboutLink());

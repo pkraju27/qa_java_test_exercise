@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">17 methods,   17 passed</span>
+                    <span class="method-stats">18 methods,   18 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -125,6 +125,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_ContactLink">test_ContactLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_HaudSolutionsDropDown">test_HaudSolutionsDropDown</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -242,6 +247,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="test_HaudSolutionsDropDown">
+                  </a> <!-- test_HaudSolutionsDropDown -->
+                  <span class="method-name">test_HaudSolutionsDropDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="test_HaudSolutionsLink">
                   </a> <!-- test_HaudSolutionsLink -->
                   <span class="method-name">test_HaudSolutionsLink</span>
@@ -334,8 +346,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Haud&quot;&gt;
-  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Desktop&quot;&gt;
+&lt;suite name=&quot;Haud&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Desktop&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest&quot;/&gt;
     &lt;/classes&gt;
@@ -377,80 +389,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(17);
+data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_SmartNForceLink')
+data.setCell(0, 1, 'test_CareersLink')
 data.setCell(0, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(0, 3, 3839);
+data.setCell(0, 3, 2494);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test_CareersLink')
+data.setCell(1, 1, 'test_SmartNForceLink')
 data.setCell(1, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(1, 3, 2688);
+data.setCell(1, 3, 2283);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test_SmartXchangeLink')
 data.setCell(2, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(2, 3, 2085);
+data.setCell(2, 3, 2090);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test_HaudSolutionsLink')
+data.setCell(3, 1, 'test_MeetTeamLink')
 data.setCell(3, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(3, 3, 2075);
+data.setCell(3, 3, 1965);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test_TrendingTopicsLink')
+data.setCell(4, 1, 'test_SmartNvisionLink')
 data.setCell(4, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(4, 3, 1890);
+data.setCell(4, 3, 1883);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'test_MeetTeamLink')
+data.setCell(5, 1, 'test_CompanyLink')
 data.setCell(5, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(5, 3, 1871);
+data.setCell(5, 3, 1876);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'test_CompanyLink')
+data.setCell(6, 1, 'test_SmartChargeLink')
 data.setCell(6, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(6, 3, 1830);
+data.setCell(6, 3, 1849);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'test_SmartNvisionLink')
+data.setCell(7, 1, 'test_SmartEnabledLink')
 data.setCell(7, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(7, 3, 1760);
+data.setCell(7, 3, 1807);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'test_KnowledgeCenterLink')
+data.setCell(8, 1, 'test_SmartBidLink')
 data.setCell(8, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(8, 3, 1695);
+data.setCell(8, 3, 1728);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'test_LogoClick')
+data.setCell(9, 1, 'test_AboutHaudLink')
 data.setCell(9, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(9, 3, 1624);
+data.setCell(9, 3, 1673);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'test_HomeLink')
+data.setCell(10, 1, 'test_LogoClick')
 data.setCell(10, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(10, 3, 1474);
+data.setCell(10, 3, 1583);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'test_SmartChargeLink')
+data.setCell(11, 1, 'test_HaudSolutionsLink')
 data.setCell(11, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(11, 3, 1471);
+data.setCell(11, 3, 1463);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'test_SmartBidLink')
+data.setCell(12, 1, 'test_TrendingTopicsLink')
 data.setCell(12, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(12, 3, 1448);
+data.setCell(12, 3, 1440);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'test_ContactLink')
+data.setCell(13, 1, 'test_KnowledgeCenterLink')
 data.setCell(13, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(13, 3, 1422);
+data.setCell(13, 3, 1424);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'test_SmartEnabledLink')
+data.setCell(14, 1, 'test_HomeLink')
 data.setCell(14, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(14, 3, 1144);
+data.setCell(14, 3, 1353);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'test_AboutHaudLink')
+data.setCell(15, 1, 'test_ContactLink')
 data.setCell(15, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(15, 3, 872);
+data.setCell(15, 3, 1337);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'test_AboutUsMenu')
+data.setCell(16, 1, 'test_HaudSolutionsDropDown')
 data.setCell(16, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
-data.setCell(16, 3, 249);
+data.setCell(16, 3, 295);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test_AboutUsMenu')
+data.setCell(17, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(17, 3, 249);
 window.suiteTableData['Haud']= { tableData: data, tableDiv: 'times-div-Haud'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Haud">
               </div> <!-- times-div-Haud -->
             </div> <!-- times-div -->
@@ -483,203 +499,215 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_LogoClick</span>
-                <span class="method-start">7620 ms</span>
+                <span class="method-start">7664 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">9245 ms</span>
+                <span class="method-start">9248 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">9380 ms</span>
+                <span class="method-start">9405 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_HomeLink</span>
-                <span class="method-start">16108 ms</span>
+                <span class="method-start">16254 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">17582 ms</span>
+                <span class="method-start">17607 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">17717 ms</span>
+                <span class="method-start">17724 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_KnowledgeCenterLink</span>
-                <span class="method-start">24294 ms</span>
+                <span class="method-start">23514 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">25989 ms</span>
+                <span class="method-start">24938 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">26128 ms</span>
+                <span class="method-start">25060 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_TrendingTopicsLink</span>
-                <span class="method-start">32706 ms</span>
+                <span class="method-start">31148 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">34596 ms</span>
+                <span class="method-start">32588 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">34753 ms</span>
+                <span class="method-start">32726 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_ContactLink</span>
-                <span class="method-start">40784 ms</span>
+                <span class="method-start">39758 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">42206 ms</span>
+                <span class="method-start">41095 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">42347 ms</span>
+                <span class="method-start">41203 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_HaudSolutionsLink</span>
-                <span class="method-start">48040 ms</span>
+                <span class="method-start">47094 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">50115 ms</span>
+                <span class="method-start">48557 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">50239 ms</span>
+                <span class="method-start">48715 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test_SmartXchangeLink</span>
-                <span class="method-start">56488 ms</span>
+                <span class="method-name">test_HaudSolutionsDropDown</span>
+                <span class="method-start">54536 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">58573 ms</span>
+                <span class="method-start">54831 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">58716 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_SmartNForceLink</span>
-                <span class="method-start">63067 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">66906 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">67075 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_SmartChargeLink</span>
-                <span class="method-start">73601 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">75072 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">75211 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_SmartEnabledLink</span>
-                <span class="method-start">81475 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">82619 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">82823 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_SmartNvisionLink</span>
-                <span class="method-start">88867 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">90627 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">90763 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_SmartBidLink</span>
-                <span class="method-start">96443 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">97891 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">98040 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_AboutHaudLink</span>
-                <span class="method-start">104020 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">104892 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">105028 ms</span>
+                <span class="method-start">54939 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_AboutUsMenu</span>
-                <span class="method-start">111028 ms</span>
+                <span class="method-start">61414 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">111277 ms</span>
+                <span class="method-start">61663 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">111408 ms</span>
+                <span class="method-start">61821 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartXchangeLink</span>
+                <span class="method-start">67760 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">69850 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">69991 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartNForceLink</span>
+                <span class="method-start">76009 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">78292 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">78427 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartChargeLink</span>
+                <span class="method-start">84867 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">86716 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">86851 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartEnabledLink</span>
+                <span class="method-start">94530 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">96338 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">96470 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartNvisionLink</span>
+                <span class="method-start">102953 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">104836 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">104971 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartBidLink</span>
+                <span class="method-start">111369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">113097 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">113219 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_AboutHaudLink</span>
+                <span class="method-start">119848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">121521 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">121703 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_CompanyLink</span>
-                <span class="method-start">117073 ms</span>
+                <span class="method-start">127967 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">118903 ms</span>
+                <span class="method-start">129843 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">119055 ms</span>
+                <span class="method-start">129980 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_MeetTeamLink</span>
-                <span class="method-start">124776 ms</span>
+                <span class="method-start">136123 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">126647 ms</span>
+                <span class="method-start">138088 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">126784 ms</span>
+                <span class="method-start">138231 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_CareersLink</span>
-                <span class="method-start">130563 ms</span>
+                <span class="method-start">142203 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">133251 ms</span>
+                <span class="method-start">144697 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
