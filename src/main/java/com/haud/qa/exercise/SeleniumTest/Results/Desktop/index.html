@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Haud" class="navigator-link">
+              <span class="suite-name border-passed">Haud</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Haud" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Haud" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Haud" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Haud" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Haud" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Haud" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Haud" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Haud" class="hide-methods passed suite-Haud"> (hide)</a> <!-- hide-methods passed suite-Haud -->
+                      <a href="#" panel-name="suite-Haud" class="show-methods passed suite-Haud"> (show)</a> <!-- show-methods passed suite-Haud -->
+                    </span>
+                    <div class="method-list-content passed suite-Haud">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_AboutHaudLink">test_AboutHaudLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_AboutUsMenu">test_AboutUsMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_CareersLink">test_CareersLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_CompanyLink">test_CompanyLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_ContactLink">test_ContactLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_HaudSolutionsLink">test_HaudSolutionsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_HomeLink">test_HomeLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_KnowledgeCenterLink">test_KnowledgeCenterLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_LogoClick">test_LogoClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_MeetTeamLink">test_MeetTeamLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_SmartBidLink">test_SmartBidLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_SmartChargeLink">test_SmartChargeLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_SmartEnabledLink">test_SmartEnabledLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_SmartNForceLink">test_SmartNForceLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_SmartNvisionLink">test_SmartNvisionLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_SmartXchangeLink">test_SmartXchangeLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Haud" title="com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest" class="method navigator-link" hash-for-method="test_TrendingTopicsLink">test_TrendingTopicsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Haud -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Haud" class="panel Haud">
+          <div class="suite-Haud-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_AboutHaudLink">
+                  </a> <!-- test_AboutHaudLink -->
+                  <span class="method-name">test_AboutHaudLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_AboutUsMenu">
+                  </a> <!-- test_AboutUsMenu -->
+                  <span class="method-name">test_AboutUsMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_CareersLink">
+                  </a> <!-- test_CareersLink -->
+                  <span class="method-name">test_CareersLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_CompanyLink">
+                  </a> <!-- test_CompanyLink -->
+                  <span class="method-name">test_CompanyLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_ContactLink">
+                  </a> <!-- test_ContactLink -->
+                  <span class="method-name">test_ContactLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_HaudSolutionsLink">
+                  </a> <!-- test_HaudSolutionsLink -->
+                  <span class="method-name">test_HaudSolutionsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_HomeLink">
+                  </a> <!-- test_HomeLink -->
+                  <span class="method-name">test_HomeLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_KnowledgeCenterLink">
+                  </a> <!-- test_KnowledgeCenterLink -->
+                  <span class="method-name">test_KnowledgeCenterLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_LogoClick">
+                  </a> <!-- test_LogoClick -->
+                  <span class="method-name">test_LogoClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_MeetTeamLink">
+                  </a> <!-- test_MeetTeamLink -->
+                  <span class="method-name">test_MeetTeamLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SmartBidLink">
+                  </a> <!-- test_SmartBidLink -->
+                  <span class="method-name">test_SmartBidLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SmartChargeLink">
+                  </a> <!-- test_SmartChargeLink -->
+                  <span class="method-name">test_SmartChargeLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SmartEnabledLink">
+                  </a> <!-- test_SmartEnabledLink -->
+                  <span class="method-name">test_SmartEnabledLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SmartNForceLink">
+                  </a> <!-- test_SmartNForceLink -->
+                  <span class="method-name">test_SmartNForceLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SmartNvisionLink">
+                  </a> <!-- test_SmartNvisionLink -->
+                  <span class="method-name">test_SmartNvisionLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_SmartXchangeLink">
+                  </a> <!-- test_SmartXchangeLink -->
+                  <span class="method-name">test_SmartXchangeLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_TrendingTopicsLink">
+                  </a> <!-- test_TrendingTopicsLink -->
+                  <span class="method-name">test_TrendingTopicsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Haud-class-passed -->
+        </div> <!-- panel Haud -->
+        <div panel-name="test-xml-Haud" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Haud&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Desktop&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Desktop --&gt;
+&lt;/suite&gt; &lt;!-- Haud --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Haud" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Haud</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Desktop (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Haud" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Haud</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Haud" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Haud</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Haud');
+function tableData_Haud() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_SmartNForceLink')
+data.setCell(0, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(0, 3, 3839);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_CareersLink')
+data.setCell(1, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(1, 3, 2688);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_SmartXchangeLink')
+data.setCell(2, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(2, 3, 2085);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_HaudSolutionsLink')
+data.setCell(3, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(3, 3, 2075);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_TrendingTopicsLink')
+data.setCell(4, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(4, 3, 1890);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_MeetTeamLink')
+data.setCell(5, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(5, 3, 1871);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test_CompanyLink')
+data.setCell(6, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(6, 3, 1830);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test_SmartNvisionLink')
+data.setCell(7, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(7, 3, 1760);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test_KnowledgeCenterLink')
+data.setCell(8, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(8, 3, 1695);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test_LogoClick')
+data.setCell(9, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(9, 3, 1624);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test_HomeLink')
+data.setCell(10, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(10, 3, 1474);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test_SmartChargeLink')
+data.setCell(11, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(11, 3, 1471);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'test_SmartBidLink')
+data.setCell(12, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(12, 3, 1448);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test_ContactLink')
+data.setCell(13, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(13, 3, 1422);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test_SmartEnabledLink')
+data.setCell(14, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(14, 3, 1144);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test_AboutHaudLink')
+data.setCell(15, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(15, 3, 872);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test_AboutUsMenu')
+data.setCell(16, 2, 'com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest')
+data.setCell(16, 3, 249);
+window.suiteTableData['Haud']= { tableData: data, tableDiv: 'times-div-Haud'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Haud">
+              </div> <!-- times-div-Haud -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Haud" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Haud</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Haud" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Haud" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haud.qa.exercise.SeleniumTest.Desktop.DTHaudHeaderNavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_LogoClick</span>
+                <span class="method-start">7620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">9245 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9380 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_HomeLink</span>
+                <span class="method-start">16108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">17582 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">17717 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_KnowledgeCenterLink</span>
+                <span class="method-start">24294 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">25989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">26128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_TrendingTopicsLink</span>
+                <span class="method-start">32706 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">34596 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34753 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_ContactLink</span>
+                <span class="method-start">40784 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">42206 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">42347 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_HaudSolutionsLink</span>
+                <span class="method-start">48040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">50115 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">50239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartXchangeLink</span>
+                <span class="method-start">56488 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">58573 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">58716 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartNForceLink</span>
+                <span class="method-start">63067 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">66906 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">67075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartChargeLink</span>
+                <span class="method-start">73601 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">75072 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">75211 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartEnabledLink</span>
+                <span class="method-start">81475 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">82619 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">82823 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartNvisionLink</span>
+                <span class="method-start">88867 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">90627 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">90763 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SmartBidLink</span>
+                <span class="method-start">96443 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">97891 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">98040 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_AboutHaudLink</span>
+                <span class="method-start">104020 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">104892 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">105028 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_AboutUsMenu</span>
+                <span class="method-start">111028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">111277 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">111408 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_CompanyLink</span>
+                <span class="method-start">117073 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">118903 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">119055 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_MeetTeamLink</span>
+                <span class="method-start">124776 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">126647 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">126784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_CareersLink</span>
+                <span class="method-start">130563 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">133251 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
