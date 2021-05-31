@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class DriverHelper {
    WebDriver driver;
@@ -26,6 +27,7 @@ public class DriverHelper {
       }
 
       public void waitForPageLoad(){
+         waitImplicit();
          wait.until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").toString().equals("complete"));
       }
       public void waitForElementInteractable(WebElement element){
@@ -34,6 +36,7 @@ public class DriverHelper {
       public void moveCursorOverElement(WebElement e){
          Actions actions = new Actions(driver);
          actions.moveToElement(e).build().perform();
+         waitImplicit();
       }
    public void moveCursorAndClickSubMenu(WebElement e){
       Actions actions = new Actions(driver);
@@ -46,4 +49,8 @@ public class DriverHelper {
          Log.info(new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage());
       }
    }
+
+    public void waitImplicit() {
+         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    }
 }

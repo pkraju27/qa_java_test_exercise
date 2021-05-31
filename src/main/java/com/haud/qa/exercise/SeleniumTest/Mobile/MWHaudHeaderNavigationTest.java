@@ -32,15 +32,6 @@ public class MWHaudHeaderNavigationTest {
    }
 
 
-//   @BeforeTest
-//   public void pageReload(){
-//      homePage.openHomePage();
-//   }
-//   @AfterTest
-//   public void analyzeLogs(){
-//      driverHelper.analyzeBrowserLog(driver);
-//   }
-
    @Test(priority = 1)
    public void test_LogoClick() {
       homePage.getHeaderNav().clickLogo();
@@ -56,6 +47,7 @@ public class MWHaudHeaderNavigationTest {
    @Test(priority = 2)
    public void test_HomeLink() {
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickHome();
       driverHelper.waitForPageLoad();
       Log.info("Home link clicked");
@@ -71,6 +63,7 @@ public class MWHaudHeaderNavigationTest {
    @Test(priority = 3)
    public void test_KnowledgeCenterLink() {
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickKnowledgeCenter();
       driverHelper.waitForPageLoad();
       Log.info("Home link clicked");
@@ -86,6 +79,7 @@ public class MWHaudHeaderNavigationTest {
    @Test(priority = 4)
    public void test_TrendingTopicsLink() {
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickTrendingTopics();
       driverHelper.waitForPageLoad();
       Log.info("Home link clicked");
@@ -101,6 +95,7 @@ public class MWHaudHeaderNavigationTest {
    @Test(priority = 5)
    public void test_ContactLink() {
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickContact();
       driverHelper.waitForPageLoad();
       Log.info("Contact us clicked");
@@ -115,7 +110,7 @@ public class MWHaudHeaderNavigationTest {
    @Test(priority = 6)
    public void test_HaudSolutionsLink() {
       homePage.getHeaderNav().clickHamburgerMenu();
-      //driverHelper.waitForElementInteractable(homePage.getHeaderNav().getHaudSolutonsLink());
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickHaudSolutons();
       driverHelper.waitForPageLoad();
       Log.info("Home link clicked");
@@ -132,7 +127,9 @@ public class MWHaudHeaderNavigationTest {
    @Test(priority = 7)
    public void test_SmartXchangeLink() {
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickHaudSolutionsDrownDownIcon();
+      driverHelper.waitImplicit();
       Log.info("SmartXchange Link verification");
       homePage.getHeaderNav().getSmartXchange().click();
       driverHelper.waitForPageLoad();
@@ -148,7 +145,9 @@ public class MWHaudHeaderNavigationTest {
    @Test(priority = 8)
    public void test_SmartNForceLink() {
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickHaudSolutionsDrownDownIcon();
+      driverHelper.waitImplicit();
       Log.info("Smart Nforce Link verification");
       homePage.getHeaderNav().getSmartNForce().click();
       driverHelper.waitForPageLoad();
@@ -164,7 +163,9 @@ public class MWHaudHeaderNavigationTest {
    @Test(priority = 9)
    public void test_SmartChargeLink() {
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickHaudSolutionsDrownDownIcon();
+      driverHelper.waitImplicit();
       Log.info("Smart charge Link verification");
       homePage.getHeaderNav().getSmartCharge().click();
       driverHelper.waitForPageLoad();
@@ -182,7 +183,9 @@ public class MWHaudHeaderNavigationTest {
    public void test_SmartEnabledLink() {
       homePage.openHomePage();
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickHaudSolutionsDrownDownIcon();
+      driverHelper.waitImplicit();
       Log.info("Smart Enabled Link verification");
       homePage.getHeaderNav().getSmartEnabled().click();
       driverHelper.waitForPageLoad();
@@ -199,9 +202,10 @@ public class MWHaudHeaderNavigationTest {
    public void test_SmartNvisionLink() {
       homePage.openHomePage();
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickHaudSolutionsDrownDownIcon();
+      driverHelper.waitImplicit();
       Log.info("Smart Nvision Link verification");
-      //driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
       homePage.getHeaderNav().getSmartNvision().click();
       driverHelper.waitForPageLoad();
       Log.info("Smart Nvision link clicked");
@@ -217,7 +221,9 @@ public class MWHaudHeaderNavigationTest {
    public void test_SmartBidLink() {
       homePage.openHomePage();
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickHaudSolutionsDrownDownIcon();
+      driverHelper.waitImplicit();
       Log.info("Smart BidLink verification");
       homePage.getHeaderNav().getSmartBid().click();
       driverHelper.waitForPageLoad();
@@ -234,6 +240,7 @@ public class MWHaudHeaderNavigationTest {
    public void test_AboutHaudLink() {
       homePage.openHomePage();
       homePage.getHeaderNav().clickHamburgerMenu();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickAbout();
       driverHelper.waitForPageLoad();
       Log.info("Home link clicked");
@@ -251,8 +258,10 @@ public class MWHaudHeaderNavigationTest {
    public void test_CompanyLink() {
       homePage.openHomePage();
       homePage.getHeaderNav().clickHamburgerMenu();
-      Log.info("Smart BidLink verification");
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().clickAboutUsDrownDownIcon();
+      driverHelper.waitImplicit();
+      Log.info("Company link verification");
       homePage.getHeaderNav().getCompany().click();
       driverHelper.waitForPageLoad();
       Log.info("Company link clicked");
@@ -268,8 +277,10 @@ public class MWHaudHeaderNavigationTest {
    public void test_MeetTeamLink() {
       homePage.openHomePage();
       homePage.getHeaderNav().clickHamburgerMenu();
-      Log.info("Smart BidLink verification");
+      driverHelper.waitImplicit();
+      Log.info("Meet team link verification");
       homePage.getHeaderNav().clickAboutUsDrownDownIcon();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().getMeetTheTeam().click();
       driverHelper.waitForPageLoad();
       Log.info("Meet the team clicked");
@@ -283,10 +294,12 @@ public class MWHaudHeaderNavigationTest {
 
    @Test(priority = 16)
    public void test_CareersLink() {
-      homePage.openHomePage();
       homePage.getHeaderNav().clickHamburgerMenu();
-      Log.info("Smart BidLink verification");
+      driverHelper.waitImplicit();
+
+      Log.info("Careers link verification");
       homePage.getHeaderNav().clickAboutUsDrownDownIcon();
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().getCareers().click();
       driverHelper.waitForPageLoad();
       Log.info("Meet the team clicked");

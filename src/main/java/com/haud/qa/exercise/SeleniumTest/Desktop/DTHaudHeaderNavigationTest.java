@@ -16,14 +16,14 @@ public class DTHaudHeaderNavigationTest {
    DriverHelper driverHelper;
 
 
-   @BeforeClass
+   @BeforeMethod
    public void setup() {
       driver = new DriverFactory().getDriver();
       homePage = new HaudHomePage(driver);
       driverHelper = new DriverHelper(driver);
    }
 
-   @AfterClass
+   @AfterMethod
    public void teardown() {
       driver.quit();
    }
@@ -110,7 +110,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Haud Solutions drop down menu verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
       Assert.assertTrue(homePage.getHeaderNav().isHaudSolutionsDropDownMatch(TestVerificationData.haudSolutionsDropDownMenuList())
-         , "Dropdown link doesn't match");
+         , "Dropdown link list doesn't match");
    }
 
 
@@ -182,6 +182,7 @@ public class DTHaudHeaderNavigationTest {
 
       Log.info("Smart Nvision Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
+      driverHelper.waitImplicit();
       homePage.getHeaderNav().getSmartNvision().click();
       driverHelper.waitForPageLoad();
       Log.info("Smart Nvision link clicked");

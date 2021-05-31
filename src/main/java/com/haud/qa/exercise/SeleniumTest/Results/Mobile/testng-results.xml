@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-31T13:30:45 IST" name="Haud" finished-at="2021-05-31T13:33:26 IST" duration-ms="160776">
+    <groups>
+    </groups>
+    <test started-at="2021-05-31T13:30:45 IST" name="Mobile" finished-at="2021-05-31T13:33:26 IST" duration-ms="160776">
+      <class name="com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:30:45 IST" name="setup" finished-at="2021-05-31T13:30:53 IST" duration-ms="7616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_LogoClick()[pri:1, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:30:53 IST" name="test_LogoClick" finished-at="2021-05-31T13:30:54 IST" duration-ms="1510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_LogoClick -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:30:54 IST" name="teardown" finished-at="2021-05-31T13:30:54 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:30:54 IST" name="setup" finished-at="2021-05-31T13:31:20 IST" duration-ms="25925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_HomeLink()[pri:2, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:20 IST" name="test_HomeLink" finished-at="2021-05-31T13:31:21 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_HomeLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:21 IST" name="teardown" finished-at="2021-05-31T13:31:21 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:21 IST" name="setup" finished-at="2021-05-31T13:31:28 IST" duration-ms="6855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_KnowledgeCenterLink()[pri:3, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:28 IST" name="test_KnowledgeCenterLink" finished-at="2021-05-31T13:31:29 IST" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_KnowledgeCenterLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:29 IST" name="teardown" finished-at="2021-05-31T13:31:29 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:29 IST" name="setup" finished-at="2021-05-31T13:31:36 IST" duration-ms="6177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_TrendingTopicsLink()[pri:4, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:36 IST" name="test_TrendingTopicsLink" finished-at="2021-05-31T13:31:37 IST" duration-ms="1616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_TrendingTopicsLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:37 IST" name="teardown" finished-at="2021-05-31T13:31:37 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:37 IST" name="setup" finished-at="2021-05-31T13:31:42 IST" duration-ms="4242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_ContactLink()[pri:5, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:42 IST" name="test_ContactLink" finished-at="2021-05-31T13:31:44 IST" duration-ms="2794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ContactLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:44 IST" name="teardown" finished-at="2021-05-31T13:31:44 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:44 IST" name="setup" finished-at="2021-05-31T13:31:50 IST" duration-ms="5557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_HaudSolutionsLink()[pri:6, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:50 IST" name="test_HaudSolutionsLink" finished-at="2021-05-31T13:31:52 IST" duration-ms="1708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_HaudSolutionsLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:52 IST" name="teardown" finished-at="2021-05-31T13:31:52 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:52 IST" name="setup" finished-at="2021-05-31T13:31:58 IST" duration-ms="6289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_SmartXchangeLink()[pri:7, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:31:58 IST" name="test_SmartXchangeLink" finished-at="2021-05-31T13:32:00 IST" duration-ms="1451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SmartXchangeLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:00 IST" name="teardown" finished-at="2021-05-31T13:32:00 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:00 IST" name="setup" finished-at="2021-05-31T13:32:05 IST" duration-ms="5633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_SmartNForceLink()[pri:8, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:05 IST" name="test_SmartNForceLink" finished-at="2021-05-31T13:32:07 IST" duration-ms="2011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SmartNForceLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:07 IST" name="teardown" finished-at="2021-05-31T13:32:08 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:08 IST" name="setup" finished-at="2021-05-31T13:32:14 IST" duration-ms="6628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_SmartChargeLink()[pri:9, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:14 IST" name="test_SmartChargeLink" finished-at="2021-05-31T13:32:17 IST" duration-ms="2479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SmartChargeLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:17 IST" name="teardown" finished-at="2021-05-31T13:32:17 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:17 IST" name="setup" finished-at="2021-05-31T13:32:23 IST" duration-ms="6024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_SmartEnabledLink()[pri:10, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:23 IST" name="test_SmartEnabledLink" finished-at="2021-05-31T13:32:26 IST" duration-ms="3022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SmartEnabledLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:26 IST" name="teardown" finished-at="2021-05-31T13:32:26 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:26 IST" name="setup" finished-at="2021-05-31T13:32:33 IST" duration-ms="7199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_SmartNvisionLink()[pri:11, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:33 IST" name="test_SmartNvisionLink" finished-at="2021-05-31T13:32:36 IST" duration-ms="2927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SmartNvisionLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:36 IST" name="teardown" finished-at="2021-05-31T13:32:36 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:36 IST" name="setup" finished-at="2021-05-31T13:32:42 IST" duration-ms="6090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_SmartBidLink()[pri:12, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:42 IST" name="test_SmartBidLink" finished-at="2021-05-31T13:32:46 IST" duration-ms="3612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SmartBidLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:46 IST" name="teardown" finished-at="2021-05-31T13:32:46 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:46 IST" name="setup" finished-at="2021-05-31T13:32:53 IST" duration-ms="7336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_AboutHaudLink()[pri:13, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:53 IST" name="test_AboutHaudLink" finished-at="2021-05-31T13:32:56 IST" duration-ms="2817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_AboutHaudLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:56 IST" name="teardown" finished-at="2021-05-31T13:32:56 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:32:56 IST" name="setup" finished-at="2021-05-31T13:33:04 IST" duration-ms="7622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_CompanyLink()[pri:14, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:33:04 IST" name="test_CompanyLink" finished-at="2021-05-31T13:33:07 IST" duration-ms="2502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CompanyLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:33:07 IST" name="teardown" finished-at="2021-05-31T13:33:07 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:33:07 IST" name="setup" finished-at="2021-05-31T13:33:13 IST" duration-ms="6080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_MeetTeamLink()[pri:15, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:33:13 IST" name="test_MeetTeamLink" finished-at="2021-05-31T13:33:16 IST" duration-ms="3507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_MeetTeamLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:33:16 IST" name="teardown" finished-at="2021-05-31T13:33:16 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:33:16 IST" name="setup" finished-at="2021-05-31T13:33:24 IST" duration-ms="7311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_CareersLink()[pri:16, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:33:24 IST" name="test_CareersLink" finished-at="2021-05-31T13:33:26 IST" duration-ms="1956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CareersLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest@5db250b4]" started-at="2021-05-31T13:33:26 IST" name="teardown" finished-at="2021-05-31T13:33:26 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.haud.qa.exercise.SeleniumTest.Mobile.MWHaudHeaderNavigationTest -->
+    </test> <!-- Mobile -->
+  </suite> <!-- Haud -->
+</testng-results>

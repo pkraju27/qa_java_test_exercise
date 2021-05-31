@@ -10,16 +10,17 @@ import org.testng.xml.XmlSuite;
 public class Main {
    public static void main(String[] args) {
       TestNG testSuite = new TestNG();
+      testSuite.addListener(new HaudTestListener());
+      testSuite.setDefaultSuiteName("Haud");
+      testSuite.setParallel(XmlSuite.ParallelMode.TESTS);
+      testSuite.setThreadCount(4);
+      testSuite.getReporters();
       if (GetProperty.PLATFORM.equalsIgnoreCase("Desktop"))
          testSuite.setTestClasses(new Class[]{DTHaudHeaderNavigationTest.class});
       else
          testSuite.setTestClasses(new Class[]{MWHaudHeaderNavigationTest.class});
-      testSuite.addListener(new HaudTestListener());
-      testSuite.setDefaultSuiteName("My Test Suite");
-      testSuite.setDefaultTestName("My Test");
-      testSuite.setParallel(XmlSuite.ParallelMode.NONE);
-      testSuite.setOutputDirectory("src/main/java/com/haud/qa/exercise/SeleniumTest/Results");
-      testSuite.getReporters();
+      testSuite.setOutputDirectory("src/main/java/com/haud/qa/exercise/SeleniumTest/Results/"+GetProperty.PLATFORM);
+      testSuite.setDefaultTestName(GetProperty.PLATFORM);
       testSuite.run();
       Log.info("Test execution completed, find test results here : " + testSuite.getOutputDirectory());
    }
