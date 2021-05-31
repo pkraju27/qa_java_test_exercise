@@ -13,10 +13,20 @@ The following tasks are about testing a website's _header_ navigation and the te
 
 ---
 
+## Tools required 
+- Either Chrome or Firefox installed. Latest version is preferred
+- Java installed and path configured
+- Maven installed and path configured
+- Any Java IDE with TestNg and Junit test runner support to run the application
+
+---
+
 
 ## 1. Test specification
 
-Test Specification added for Haud home page navigation menu. Test case document created in google sheets and document link can be found [here](https://docs.google.com/spreadsheets/d/11Ewn33zfWBUK8JJuR1nzduQ83bPuc5zhJ7mlUBvbAw0/edit#gid=0)
+Test Specification added for Haud home page navigation menu. 
+- Test case document created in google sheets and document link can be found [here](https://docs.google.com/spreadsheets/d/11Ewn33zfWBUK8JJuR1nzduQ83bPuc5zhJ7mlUBvbAw0/edit#gid=0)
+- Document contains two test cases for Desktop and mobile in individual sheets
 
 
 ## 2. Automated Selenium Test
@@ -37,6 +47,11 @@ Test Specification added for Haud home page navigation menu. Test case document 
 <li> webdrivermanager library is used to manage driver
 <li> TestNg framework is used for running test and generating test reports
 <li> <i>com.haud.qa.exercise.Log</i> class is used to log the events 
+   
+### Important note 
+- Above test is written keeping Single responsibility principle design pattern.
+- Platform needs to be updated to Mobile in main.properties file before running Mobile Specific tests
+- First run of application might take some time as it needs to download necessary browser drivers and libraries. Subsequent runs should be fine.
 
 ## 3. Automated API Test
 
@@ -56,6 +71,9 @@ API library to test [Pet Store](https://petstore.swagger.io).
 ### Config files
 <li> <i>ApiTest.properties</i> file is used to set BaseURL and apiKey properties
 <li> Default connection time out is set to 60 secs
+   
+### Important note
+- Scenario in petstore.feature is defined to create and get pet detail and match response with name , category and tag
 
 
 
