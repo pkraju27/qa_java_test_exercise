@@ -5,30 +5,21 @@
 The Quality Assurance team's main aim is to provide rigor and validation to the target application.
 The following tasks are about testing a website's _header_ navigation and the test is intended for automated regression testing.
 
-Please either download or fork this project to start working on this test. Also please note that the last task is optional.
-
-When submitting the project please provide a summary of the required tools to run the application.
-
-Thank you for trying the test.
-
-
 ## Tasks
 
-1. [Write Test Specification](#1-write-test-specification)
-2. [Automated Selenium Test](#2-automated-selenium-test)
-3. [Automated API Test](#3-automated-API-test)
-
-
+### Test Specification
+### Automated Selenium Test
+### Automated API Test
 
 ---
 
 
-## 1. Write Test Specification - Solution
+## 1. Test specification
 
 Test Specification added for Haud home page navigation menu. Test case document created in google sheets and document link can be found [here](https://docs.google.com/spreadsheets/d/11Ewn33zfWBUK8JJuR1nzduQ83bPuc5zhJ7mlUBvbAw0/edit#gid=0)
 
 
-## 2. Automated Selenium Test - Solution
+## 2. Automated Selenium Test
 
 ### How to run 
 <li> Execute class <i>com.haud.qa.exercise.Main</i>
@@ -44,7 +35,7 @@ Test Specification added for Haud home page navigation menu. Test case document 
 <li> TestNg framework is used for running test and generating test reports
 <li> <i>com.haud.qa.exercise.Log</i> class is used to log the events 
 
-## 3. Automated API Test - Solution
+## 3. Automated API Test
 
 API library to test [Pet Store](https://petstore.swagger.io).
 
