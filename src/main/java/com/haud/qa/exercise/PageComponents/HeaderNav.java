@@ -12,7 +12,7 @@ public class HeaderNav extends AbstractComponent {
 
    By logo = By.cssSelector(".custom-logo");
    By home = By.id("menu-item-5319");
-   By haudSolutons = By.id("menu-item-5320");
+   By haudSolutons = By.xpath("//*[@id='menu-item-5320']//a");
    By haudSolutonsDropdown = By.xpath("//*[@id='menu-item-5320']//*[@class='sub-menu']");
    By AboutUsDropDown = By.xpath("//*[@id='menu-item-5328']//*[@class='sub-menu']");
    By KnowledgeCenter = By.xpath("//*[@id='menu-item-5327']/a");
@@ -31,8 +31,8 @@ public class HeaderNav extends AbstractComponent {
    By HaudSolutionsDrownDownMenuList = By.cssSelector(".menu-item-type-post_type");
    By AboutUsDropDownList = By.cssSelector(".menu-item");
    By HamburgerMenu = By.cssSelector(".menu-toggle");
-   By HaudSolutionsDropDownIcon = By.xpath("//*[@id='menu-item-5320']//*[@class='dropdown-toggle']");
-   By AboutUsDropDownIcon = By.xpath("//*[@id='menu-item-5328']//*[@class='dropdown-toggle']");
+   By HaudSolutionsDropDownIcon = By.xpath("//*[@id='menu-item-5320']//*[@class='dropdown-toggle']//*[@class='icon-drop-down']");
+   By AboutUsDropDownIcon = By.xpath("//*[@id='menu-item-5328']//*[@class='dropdown-toggle']//*[@class='screen-reader-text']");
 
 
    public HeaderNav(WebDriver driver, By headerSection) {

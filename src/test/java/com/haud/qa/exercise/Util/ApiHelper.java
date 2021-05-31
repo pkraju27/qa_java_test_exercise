@@ -24,7 +24,7 @@ public class ApiHelper {
    {
       if(req==null)
       {
-         PrintStream log =new PrintStream(new FileOutputStream("logging.txt"));
+         PrintStream log =new PrintStream(new FileOutputStream("logging.log"));
          req=new RequestSpecBuilder().setBaseUri(GetProperty.BASE_URL)
             .addFilter(RequestLoggingFilter.logRequestTo(log))
             .addFilter(ResponseLoggingFilter.logResponseTo(log))

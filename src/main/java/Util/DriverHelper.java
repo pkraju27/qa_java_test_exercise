@@ -10,6 +10,7 @@ import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -26,6 +27,9 @@ public class DriverHelper {
 
       public void waitForPageLoad(){
          wait.until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").toString().equals("complete"));
+      }
+      public void waitForElementInteractable(WebElement element){
+         wait.until(ExpectedConditions.elementToBeClickable(element));
       }
       public void moveCursorOverElement(WebElement e){
          Actions actions = new Actions(driver);

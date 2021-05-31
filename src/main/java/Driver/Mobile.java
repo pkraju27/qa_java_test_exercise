@@ -24,6 +24,7 @@ public class Mobile {
    }
 
    public void setDriver(WebDriver driver) {
+      driver.manage().window().setSize(new Dimension(375,812));
       this.driver = driver;
    }
 
@@ -68,7 +69,7 @@ public class Mobile {
       firefoxOptions.setAcceptInsecureCerts(true);
       setDriver(new FirefoxDriver(firefoxOptions));
       // iphone 8 plus dimensions
-      getDriver().manage().window().setSize(new Dimension(414,736));
+
    }
 
    /**
@@ -88,7 +89,7 @@ public class Mobile {
          "AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75\n" +
          "Mobile/14E5239e Safari/602.1"); // Chrome on iOS user agent
       setDriver(new ChromeDriver(chromeOptions));
-      getDriver().manage().window().setSize(new Dimension(414,736));
+
    }
 
    private boolean isDefaultBrowser(){
