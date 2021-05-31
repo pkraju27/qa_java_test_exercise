@@ -48,7 +48,7 @@ Test Specification added for Haud home page navigation menu. Test case document 
 
 API library to test [Pet Store](https://petstore.swagger.io).
 
-###How to run
+### How to run
 <li> <i>mvn clean test</i>
 <br> or
 <li> run <i>src/test/java/com/haud/qa/exercise/cucumber/options/Testrunner.java</i> class directly
