@@ -31,8 +31,9 @@ public class DTHaudHeaderNavigationTest {
 
    @Test(priority = 1)
    public void test_LogoClick() {
+      Log.info("Test Logo click started");
       homePage.getHeaderNav().clickLogo();
-      Log.info("Logoclicked");
+      Log.info("Logo clicked");
       Assert.assertTrue(homePage.getHeaderNav().verifyPageTitle(driver, TestVerificationData.getPageTitleList().get("logo"))
          , "Page title doesn't match");
       Log.info("Page title matched");
@@ -41,25 +42,26 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 2)
+   @Test(priority = 1)
    public void test_HomeLink() {
+      Log.info("Test Home link started");
       homePage.getHeaderNav().clickHome();
-      driverHelper.waitForPageLoad();
       Log.info("Home link clicked");
+      driverHelper.waitForPageLoad();
       Assert.assertTrue(homePage.getHeaderNav().verifyPageTitle(driver, TestVerificationData.getPageTitleList().get("home"))
          , "Page title doesn't match");
       Log.info("Page title matched");
       Assert.assertTrue(homePage.getHeaderNav().verifyCurrentURL(driver, TestVerificationData.getPageURLList().get("home"))
          , "Page url not matching");
       Log.info("Page url matched");
-
    }
 
-   @Test(priority = 3)
+   @Test(priority = 1)
    public void test_KnowledgeCenterLink() {
+      Log.info("Test Knowledge Center started");
       homePage.getHeaderNav().clickKnowledgeCenter();
       driverHelper.waitForPageLoad();
-      Log.info("Home link clicked");
+      Log.info("Knowledge center link clicked");
       Assert.assertTrue(homePage.getHeaderNav().verifyPageTitle(driver, TestVerificationData.getPageTitleList().get("Knowledge center"))
          , "Page title doesn't match");
       Log.info("Page title matched");
@@ -69,8 +71,9 @@ public class DTHaudHeaderNavigationTest {
 
    }
 
-   @Test(priority = 4)
+   @Test(priority = 1)
    public void test_TrendingTopicsLink() {
+      Log.info("Test Trending topics started");
       homePage.getHeaderNav().clickTrendingTopics();
       driverHelper.waitForPageLoad();
       Log.info("Home link clicked");
@@ -83,8 +86,9 @@ public class DTHaudHeaderNavigationTest {
 
    }
 
-   @Test(priority = 5)
+   @Test(priority = 1)
    public void test_ContactLink() {
+      Log.info("Test Contact us started");
       homePage.getHeaderNav().clickContact();
       driverHelper.waitForPageLoad();
       Log.info("Contact us clicked");
@@ -96,25 +100,39 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 6)
+   @Test(priority = 1)
    public void test_HaudSolutionsLink() {
+      Log.info("Test Haud Solutions started");
       homePage.getHeaderNav().clickHaudSolutons();
       driverHelper.waitForPageLoad();
-      Log.info("Home link clicked");
+      Log.info("Haud Solutions link clicked");
       Assert.assertTrue(homePage.getHeaderNav().verifyPageTitle(driver, TestVerificationData.getPageTitleList().get("Haud solutions"))
          , "Page title doesn't match");
       Log.info("Page title matched");
       Assert.assertTrue(homePage.getHeaderNav().verifyCurrentURL(driver, TestVerificationData.getPageURLList().get("Haud solutions"))
          , "Page url not matching");
       Log.info("Page url matched");
+   }
+
+   @Test(priority = 1)
+   public void test_HaudSolutionsDropDown(){
       Log.info("Haud Solutions drop down menu verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
       Assert.assertTrue(homePage.getHeaderNav().isHaudSolutionsDropDownMatch(TestVerificationData.haudSolutionsDropDownMenuList())
          , "Dropdown link list doesn't match");
+
    }
 
 
-   @Test(priority = 7)
+   @Test(priority = 1)
+   public void test_AboutUsMenu() {
+      Log.info("About us drop down menu verification");
+      driverHelper.moveCursorOverElement(homePage.getHeaderNav().getAboutLink());
+      Assert.assertTrue(homePage.getHeaderNav().isAboutUsDropDownMatch(TestVerificationData.aboutUsDropDownMenuList())
+         , "Dropdown link doesn't match");
+   }
+
+   @Test(priority = 2)
    public void test_SmartXchangeLink() {
       Log.info("SmartXchange Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
@@ -129,9 +147,8 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 8)
+   @Test(priority = 2)
    public void test_SmartNForceLink() {
-
       Log.info("Smart Nforce Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
       homePage.getHeaderNav().getSmartNForce().click();
@@ -145,9 +162,8 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 9)
+   @Test(priority = 2)
    public void test_SmartChargeLink() {
-
       Log.info("Smart charge Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
       homePage.getHeaderNav().getSmartCharge().click();
@@ -162,7 +178,7 @@ public class DTHaudHeaderNavigationTest {
 
    }
 
-   @Test(priority = 10)
+   @Test(priority = 2)
    public void test_SmartEnabledLink() {
       Log.info("Smart Enabled Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
@@ -177,9 +193,8 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 11)
+   @Test(priority = 2)
    public void test_SmartNvisionLink() {
-
       Log.info("Smart Nvision Link verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
       driverHelper.waitImplicit();
@@ -194,7 +209,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 12)
+   @Test(priority = 2)
    public void test_SmartBidLink() {
       Log.info("Smart BidLink verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getHaudSolutonsLink());
@@ -209,8 +224,9 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 13)
+   @Test(priority = 2)
    public void test_AboutHaudLink() {
+      Log.info("Test About us started");
       homePage.getHeaderNav().clickAbout();
       driverHelper.waitForPageLoad();
       Log.info("Home link clicked");
@@ -223,15 +239,8 @@ public class DTHaudHeaderNavigationTest {
 
    }
 
-   @Test(priority = 14)
-   public void test_AboutUsMenu() {
-      Log.info("About us drop down menu verification");
-      driverHelper.moveCursorOverElement(homePage.getHeaderNav().getAboutLink());
-      Assert.assertTrue(homePage.getHeaderNav().isAboutUsDropDownMatch(TestVerificationData.aboutUsDropDownMenuList())
-         , "Dropdown link doesn't match");
-   }
 
-   @Test(priority = 15)
+   @Test(priority = 2)
    public void test_CompanyLink() {
       Log.info("Smart BidLink verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getAboutLink());
@@ -246,7 +255,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 16)
+   @Test(priority = 2)
    public void test_MeetTeamLink() {
       Log.info("Smart BidLink verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getAboutLink());
@@ -261,7 +270,7 @@ public class DTHaudHeaderNavigationTest {
       Log.info("Page url matched");
    }
 
-   @Test(priority = 17)
+   @Test(priority = 2)
    public void test_CareersLink() {
       Log.info("Smart BidLink verification");
       driverHelper.moveCursorOverElement(homePage.getHeaderNav().getAboutLink());

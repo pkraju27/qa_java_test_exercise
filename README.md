@@ -23,11 +23,14 @@ Test Specification added for Haud home page navigation menu. Test case document 
 
 ### How to run 
 <li> Execute class <i>com.haud.qa.exercise.Main</i>
-<li> Test report can be found in <i>com/haud/qa/exercise/SeleniumTest/Results</i>
+<li> TestNg Html Test report can be found <i>com/haud/qa/exercise/SeleniumTest/Results</i>
+<li> Desktop and Mobile test reports are added separately
+
 
 ### Configuration
 <li> <i>main.propperties</i> file is used for configuration
-<li> Default browser choses is Chrome. Firefox is also supported
+<li> Desktop mobile platform is supported. Default platform is desktop
+<li> Default browser chosen is Chrome. Firefox is also supported
 <li> By default latest version of chrome browser is supported. browser version can be changed in properies file to match local browser version
 
 ### Tools used 

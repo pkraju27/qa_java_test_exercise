@@ -12,8 +12,7 @@ public class Main {
       TestNG testSuite = new TestNG();
       testSuite.addListener(new HaudTestListener());
       testSuite.setDefaultSuiteName("Haud");
-      testSuite.setParallel(XmlSuite.ParallelMode.TESTS);
-      testSuite.setThreadCount(4);
+      testSuite.setParallel(XmlSuite.ParallelMode.NONE);
       testSuite.getReporters();
       if (GetProperty.PLATFORM.equalsIgnoreCase("Desktop"))
          testSuite.setTestClasses(new Class[]{DTHaudHeaderNavigationTest.class});
